@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,700&display=swap');
+
+
+
+html {
+    font-family: 'Montserrat';
+}
+
+.header {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+footer {
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+
+
+/* --------INDEX.HTML------- */
+
+.titel {
+    margin-top: 0.5em;
+    font-size: 5vw;
+    font-family: 'Montserrat';
+    font-weight: lighter;
+    color: black;
+    font-weight: 500;
+    line-height: .9;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* --------Unser Team------- */
+.team {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 8em;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* --------Bildergallerie------- */
+.fotografie {
+    height: auto;
+    width: 100%;
+}
+
+.bilder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+    margin: 6em;
+}
+
+.bilde {
+    width: 30em;
+    height: 30em;
+    margin-left: 6vh;
+    margin-bottom: 6vh;
+    margin-right: 6vh;
+    margin-top: 10vh;
+    padding: 2em;
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    transition: .6s eas-out;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.bilde a {
+    color: #fff;
+}
+
+.bilde:hover {
+    transform: translateY(15px);
+}
+
+.bilde:hover:before {
+    opacity: 1;
+}
+
+.bilde:hover .text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bilde:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.bilde img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.bilde .text {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.5s;
+}
+
+.text {
+    font-size: 1em;
+    margin: 0;
+    font-family: 'Montserrat';
+    letter-spacing: 1px;
+}
+
+.text h2 {
+    letter-spacing: 1px;
+    font-size: 2em;
+    font-family: 'Montserrat';
+}
+
+.text p {
+    letter-spacing: 1px;
+    font-size: 1em;
+    margin-top: 2em;
+    font-family: 'Montserrat';
+}
+
+.text a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.text a i {
+    color: #fff;
+    padding: 6px 8px;
+}
+
+/* --------Spinners------- */
+.spinners {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+    margin-bottom: 4em;
+}
+
+
+
+
+/* --------VIDEO.HTML------- */
+.video {
+    margin-top: 4em;
+    margin-bottom: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+main video {
+    border: solid;
+    border-color: black;
+    border-width: 4px;
+}
+
+
+
+
+/* --------AUDIO.HTML------- */
+.audio {
+    margin-top: 4em;
+    margin-bottom: 18em;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
